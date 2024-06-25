@@ -1,6 +1,7 @@
 {
   "name": "2-dragging-boxes",
   "private": true,
+  "homepage": "https://talibbb13.github.io/React-Docs-Box",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -11,7 +12,9 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@types/react": "^18.2.56",
