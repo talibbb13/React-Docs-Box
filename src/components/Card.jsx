@@ -1,6 +1,5 @@
 import React from 'react'
 import {FaRegFileAlt} from "react-icons/fa"
-import background from './background';
 import { IoMdDownload } from "react-icons/io";
 import { IoClose } from "react-icons/io5";
 import { motion } from "framer-motion";
@@ -11,8 +10,8 @@ function Card({data, reference}) {
         <motion.div
           drag
           dragConstraints={reference}
-          whileDrag={{ scale: 1.2 }}
-          className="flex flex-col flex-shrink-0 w-80 rounded-[40px] pt-10 text-xl text-white border-solid border-[1px] border-[#070F2B] overflow-hidden bg-[#9290C3] h-max"
+          whileDrag={{ scale: 1.2, cursor: "grabbing" }}
+          className="flex flex-col flex-shrink-0 w-80 rounded-[40px] pt-10 text-xl text-white border-solid border-[1px] border-[#070F2B] overflow-hidden bg-[#9290C3] h-max cursor-grab"
         >
           <FaRegFileAlt className="text-[#010409] mx-3" />
           <p className="py-5 font-bold tracking-tighter leading-tight text-[#010409] text-lg mx-3">
